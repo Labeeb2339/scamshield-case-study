@@ -9,6 +9,14 @@ reputation lookups.
 
 This repository is a public engineering case study. The application source remains private while dataset provenance, competition material, Firebase configuration, and historical credentials are reviewed for a safe release.
 
+<p align="center">
+  <img src="assets/verification-snapshot.svg" width="100%" alt="ScamShield verification snapshot: 202 tests passed, analyzer clean, with explicit claim boundaries">
+</p>
+
+This dated verification receipt reports regression execution, not detection
+accuracy. The public case study keeps the distinction visible instead of
+turning a test count into a safety claim.
+
 ## Product flow
 
 <p align="center">

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">ScamShield AI verification snapshot from 18 July 2026</title>
+  <desc id="desc">A verification receipt showing 202 automated Flutter tests passed, zero failed, a clean Dart analyzer run, and explicit boundaries that detection accuracy was not measured and the Android build was not rerun for this snapshot.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#dccfb4" opacity="0.55"/>
+    </pattern>
+  </defs>
+  <style>
+    .kicker { font: 700 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 3px; fill: #7d715c; }
+    .title { font: 800 38px system-ui, sans-serif; fill: #171611; }
+    .label { font: 650 16px system-ui, sans-serif; fill: #514b40; }
+    .number { font: 800 38px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #171611; }
+    .stamp { font: 900 19px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #d43830; }
+    .boundary-title { font: 800 18px system-ui, sans-serif; fill: #fff9eb; }
+    .boundary { font: 15px system-ui, sans-serif; fill: #dcd4c4; }
+    .boundary-value { font: 800 17px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #f7bd4f; }
+    .caption { font: 14px system-ui, sans-serif; fill: #716956; }
+  </style>
+
+  <rect width="1280" height="520" rx="28" fill="#f8f2e5"/>
+  <rect width="1280" height="520" rx="28" fill="url(#dots)"/>
+  <path d="M62 91 H1218" stroke="#d8cbae" stroke-dasharray="4 8"/>
+  <text x="62" y="48" class="kicker">VERIFICATION RECEIPT · 18 JULY 2026</text>
+  <text x="62" y="82" class="title">What was run, and what it does not prove</text>
+
+  <g transform="translate(62 128)">
+    <rect width="710" height="284" rx="22" fill="#fffaf0" stroke="#d7c8a9" stroke-width="2"/>
+    <text x="32" y="44" class="label">AUTOMATED FLUTTER TESTS</text>
+    <text x="32" y="91" class="number">202 passed · 0 failed</text>
+
+    <rect x="32" y="119" width="646" height="30" rx="15" fill="#e5d9bf"/>
+    <rect x="32" y="119" width="646" height="30" rx="15" fill="#198071"/>
+    <path d="M64 134 l8 8 16 -18" fill="none" stroke="#fffaf0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g transform="translate(32 182)">
+      <rect width="306" height="68" rx="14" fill="#efe5d1"/>
+      <text x="18" y="29" class="label">Dart analyzer</text>
+      <text x="18" y="53" class="boundary-value" fill="#187b70">CLEAN</text>
+    </g>
+    <g transform="translate(372 182)">
+      <rect width="306" height="68" rx="14" fill="#efe5d1"/>
+      <text x="18" y="29" class="label">Regression focus</text>
+      <text x="18" y="53" class="boundary-value">SCAM + LEGITIMATE</text>
+    </g>
+
+    <g transform="translate(500 24) rotate(-4)">
+      <rect width="168" height="48" rx="8" fill="none" stroke="#d43830" stroke-width="3"/>
+      <text x="84" y="32" text-anchor="middle" class="stamp">SUITE PASS</text>
+    </g>
+  </g>
+
+  <g transform="translate(812 128)">
+    <rect width="406" height="284" rx="22" fill="#1b1a16"/>
+    <text x="28" y="45" class="boundary-title">CLAIM BOUNDARY</text>
+    <path d="M28 66 H378" stroke="#4a463c"/>
+
+    <text x="28" y="105" class="boundary">Population detection accuracy</text>
+    <text x="378" y="105" text-anchor="end" class="boundary-value">NOT MEASURED</text>
+
+    <text x="28" y="157" class="boundary">Android build in this snapshot</text>
+    <text x="378" y="157" text-anchor="end" class="boundary-value">NOT RERUN</text>
+
+    <text x="28" y="209" class="boundary">Latest recorded compile check</text>
+    <text x="378" y="209" text-anchor="end" class="boundary-value">11 JUL 2026</text>
+
+    <text x="28" y="252" class="boundary">Source release</text>
+    <text x="378" y="252" text-anchor="end" class="boundary-value">PRIVATE REVIEW</text>
+  </g>
+
+  <text x="62" y="466" class="caption">Test execution is evidence of regression behaviour—not a field-accuracy study or a production-safety guarantee.</text>
+  <g transform="translate(1065 449)">
+    <path d="M0 0 h98 v30 h-98z" fill="none" stroke="#c28a22" stroke-width="2"/>
+    <text x="49" y="21" text-anchor="middle" class="kicker" style="font-size:12px;letter-spacing:1px;fill:#8c681f">SCAMSHIELD</text>
+  </g>
+</svg>
