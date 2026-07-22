@@ -2,7 +2,10 @@
 
 **A privacy-first Android prototype for explaining and reducing Malaysian scam risk.**
 
-ScamShield AI combines an on-device text classifier with explainable rules, link and file checks, screenshot OCR, QR scanning, local history, and optional community reputation lookups. It was built with Flutter for the Young Innovators Challenge 2026.
+I built ScamShield AI with Flutter for the Young Innovators Challenge 2026. It
+combines an on-device text classifier with explainable rules, link and file
+checks, screenshot OCR, QR scanning, local history, and optional community
+reputation lookups.
 
 This repository is a public engineering case study. The application source remains private while dataset provenance, competition material, Firebase configuration, and historical credentials are reviewed for a safe release.
 
