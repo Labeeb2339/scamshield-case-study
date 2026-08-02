@@ -9,25 +9,21 @@ reputation lookups.
 
 This repository is a public engineering case study. The application source remains private while dataset provenance, competition material, Firebase configuration, and historical credentials are reviewed for a safe release.
 
-<p align="center">
-  <img src="assets/verification-snapshot.svg" width="100%" alt="ScamShield verification snapshot: 202 tests passed, analyzer clean, with explicit claim boundaries">
-</p>
-
-This dated verification receipt reports regression execution, not detection
-accuracy. The public case study keeps the distinction visible instead of
-turning a test count into a safety claim.
-
 ## Product flow
 
 <p align="center">
-  <img src="assets/home.png" width="30%" alt="ScamShield scan options">
-  <img src="assets/verdict.png" width="30%" alt="ScamShield risk verdict">
-  <img src="assets/evidence.png" width="30%" alt="ScamShield evidence explanation">
+  <img src="assets/home.png" width="30%" alt="ScamShield Android home screen with message, screenshot, link, QR, number, and file scan entry points">
+  <img src="assets/verdict.png" width="30%" alt="ScamShield Android analysis verdict for a synthetic high-risk banking-scam example">
+  <img src="assets/evidence.png" width="30%" alt="ScamShield Android evidence view listing the synthetic example's model and rule signals">
 </p>
+
+The displayed `97/100` risk score and `100%` model value are outputs for a
+synthetic demo message, not measured detection accuracy or a calibrated
+probability.
 
 The interface is designed to answer three questions:
 
-1. **How risky is this?** — a calibrated score and risk band.
+1. **How risky is this?** — a prototype risk score and risk band.
 2. **Why was it flagged?** — specific evidence such as urgency, impersonation, suspicious links, or requests for credentials.
 3. **What should I do next?** — practical steps, including contacting the organisation through an official channel and calling Malaysia's NSRC 997 after a transfer.
 
@@ -58,6 +54,14 @@ flowchart LR
 The rules distinguish weak signals from combinations. A bank name alone should not condemn a legitimate receipt; a bank name plus urgency, a non-official link, and a request for an OTP is a much stronger phishing pattern. The result screen exposes the triggered evidence instead of presenting an unexplained label.
 
 ## Verification evidence
+
+<p align="center">
+  <img src="assets/verification-snapshot.svg" width="100%" alt="Dated ScamShield regression receipt: 202 Flutter tests passed and the Dart analyzer was clean; no detection-accuracy claim">
+</p>
+
+This dated verification receipt reports regression execution, not detection
+accuracy. The public case study keeps the distinction visible instead of
+turning a test count into a safety claim.
 
 On **18 July 2026**, I reran the available checks and recorded:
 
