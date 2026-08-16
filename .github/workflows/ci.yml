@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify markdown internal references resolve
+        run: |
+          python - <<'PY'
+          import pathlib, re, sys
+
+          root = pathlib.Path(".")
+          broken = []
+          for md in sorted(root.rglob("*.md")):
+              text = md.read_text(encoding="utf-8")
+              refs = re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text)
+              refs += re.findall(r'(?:src|href)="([^"]+)"', text)
+              for ref in refs:
+                  ref = ref.strip().split("#")[0].split("?")[0]
+                  if not ref or ref.startswith(("http://", "https://", "mailto:", "#", "data:")):
+                      continue
+                  target = (md.parent / ref).resolve()
+                  if not target.exists():
+                      broken.append(f"{md}: {ref}")
+
+          if broken:
+              print("Broken internal references:")
+              for b in broken:
+                  print("  " + b)
+              sys.exit(1)
+
+          print("All internal references resolve.")
+          PY
