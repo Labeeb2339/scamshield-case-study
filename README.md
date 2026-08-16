@@ -59,7 +59,7 @@ The rules distinguish weak signals from combinations. A bank name alone should n
   <img src="assets/verification-snapshot.svg" width="100%" alt="Dated ScamShield regression receipt: 202 Flutter tests passed and the Dart analyzer was clean; no detection-accuracy claim">
 </p>
 
-This dated verification receipt reports regression execution, not detection
+This dated test record reports regression execution, not detection
 accuracy. The public case study keeps the distinction visible instead of
 turning a test count into a safety claim.
 
